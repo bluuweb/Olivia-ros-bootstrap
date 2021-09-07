@@ -1,12 +1,229 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Static Template</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+
+    <!-- Fuente Raleway -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <title>Olivia Ros</title>
   </head>
   <body>
-    <h1>This is a static template, there is no bundler or bundling involved!</h1>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="bg-header">
+      <div class="container text-end text-white">
+        <h1 class="display-1 fw-bolder mb-5">Comidas del fin del mundo</h1>
+        <p class="fw-light">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad id veniam
+          ipsa quo, assumenda consequuntur velit ipsum iusto inventore at! Ipsa
+          sint repudiandae illo, excepturi sapiente qui magnam aliquid
+          veritatis.
+        </p>
+        <div>
+          <button class="btn btn-lg btn-outline-info text-white me-3">
+            Trabajos
+          </button>
+          <button class="btn btn-lg btn-info text-white">Trabajos</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container my-5 text-center">
+      <h2 class="display-3 fw-bolder my-3">Acerca de mi</h2>
+      <p class="my-4">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
+        quibusdam cumque, aliquid eum mollitia accusantium reprehenderit laborum
+        repudiandae quos repellendus reiciendis fuga deserunt ipsa tenetur
+        labore magni architecto maxime eius.
+      </p>
+      <div class="row">
+        <article class="col-12 col-md-4">
+          <i class="fas fa-camera fa-3x my-3"></i>
+          <h3 class="my-3">Lorem, ipsum dolor.</h3>
+          <p class="my-3">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque
+            tenetur tempore ipsa, non quia nulla.
+          </p>
+        </article>
+        <article class="col-12 col-md-4">
+          <i class="fas fa-bullhorn fa-3x my-3"></i>
+          <h3 class="my-3">Lorem, ipsum dolor.</h3>
+          <p class="my-3">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque
+            tenetur tempore ipsa, non quia nulla.
+          </p>
+        </article>
+        <article class="col-12 col-md-4">
+          <i class="far fa-map fa-3x my-3"></i>
+          <h3 class="my-3">Lorem, ipsum dolor.</h3>
+          <p class="my-3">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque
+            tenetur tempore ipsa, non quia nulla.
+          </p>
+        </article>
+      </div>
+    </main>
+
+    <section class="container bg-info py-5 my-5">
+      <h2 class="display-3 text-white text-center fw-bolder my-3">
+        Mis trabajos
+      </h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4 my-5">
+        <article class="col">
+          <div class="card h-100">
+            <img src="assets/img/card-1.jpg" alt="" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Lorem, ipsum dolor.</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                exercitationem laudantium possimus perferendis odio quod.
+              </p>
+              <button class="btn btn-outline-success">Ver más</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="col">
+          <div class="card h-100">
+            <img src="assets/img/card-2.jpg" alt="" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Lorem, ipsum dolor.</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                exercitationem laudantium possimus perferendis odio quod.
+              </p>
+              <button class="btn btn-outline-success">Ver más</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="col">
+          <div class="card h-100">
+            <img src="assets/img/card-3.jpg" alt="" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Lorem, ipsum dolor.</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                exercitationem laudantium possimus perferendis odio quod.
+              </p>
+              <button class="btn btn-outline-success">Ver más</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="container my-5">
+      <h2 class="display-3 text-center fw-bolder my-3">
+        Contáctame
+      </h2>
+      <p class="text-center my-4">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias quisquam
+        mollitia libero inventore, culpa dolor consequuntur hic natus placeat.
+      </p>
+      <form>
+        <div class="mb-3">
+          <label for="inputNombre" class="form-label fw-bolder">Nombre</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputNombre"
+            placeholder="Nombre"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="inputEmail" class="form-label fw-bolder"
+            >Correo electrónico</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="inputEmail"
+            aria-describedby="emailHelp"
+            placeholder="Correo electrónico"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="inputTextArea" class="form-label fw-bolder"
+            >Mensaje</label
+          >
+          <textarea
+            class="form-control"
+            id="inputTextArea"
+            rows="3"
+            placeholder="Escribe tu mensaje"
+          ></textarea>
+        </div>
+        <div class="text-end">
+          <button type="submit" class="btn btn-info text-white">Enviar</button>
+        </div>
+      </form>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+      <p class="m-0">Lorem ipsum dolor sit amet.</p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

@@ -1,0 +1,29 @@
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.bg-header {
+  background-image: url("../img/bg-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 10em 0;
+}
+
+@media (min-width: 768px) {
+  .card-img-top {
+    height: 10em;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-img-top {
+    height: 15em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card-img-top {
+    height: 18em;
+  }
+}
